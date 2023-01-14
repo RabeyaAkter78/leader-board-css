@@ -138,6 +138,9 @@ hr {
 /* --------------------Media Queries-------------------- */
 /* Mobile Devices */
 @media only screen and (max-width:688px) {
+    .section-title{
+        padding-left: 20px;
+    }
     .container{
         width: 100%;
     }
@@ -145,19 +148,29 @@ hr {
         flex-direction: column;
     }
     .players, .blogs, .courses{
+        padding-left: 20px;
         grid-template-columns: repeat(1, 1fr);
     } 
 }
 /* -------------------tablet devices------------------ */
 @media only screen and (min-width:688px) and (max-width:992px) {
+    .section-title{
+        padding-left: 20px;
+    }
     .container{
         width: 100%;
     }
-    .players, .courses{
+  
+    .players{
+        padding-left: 20px;
         grid-template-columns: repeat(2, 1fr);
     }
-     .blogs {
+    .blogs {
         padding-left: 20px;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .courses{
+        padding-left: 20px;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
